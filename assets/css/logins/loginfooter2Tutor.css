@@ -1,0 +1,49 @@
+/* Contenedor del footer */
+.footer-container {
+    color: rgb(87, 97, 226);
+    padding: 0.5em 1em;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    border-radius: 1em;
+}
+
+/* Estilos del grupo de enlaces dentro del footer */
+.footer-linksTuto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Coloca los enlaces verticalmente en pantallas pequeñas */
+}
+
+.footer-link-groupTuto {
+    display: flex;
+    flex-direction: column; /* Coloca los enlaces verticalmente en pantallas pequeñas */
+    align-items: center;
+}
+
+.footer-linkTuto {
+    color: rgb(51, 67, 139);
+    text-decoration: none;
+    margin: 2px 0;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-linkTuto:hover {
+    color: #DC7633; /* Cambia el color al pasar el mouse por encima */
+}
+
+/* Para pantallas más grandes, coloca los enlaces en una fila */
+@media (min-width: 600px) {
+    .footer-link-groupTuto {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-linkTuto {
+        margin: 0 15px; /* Espacio entre los enlaces */
+    }
+}

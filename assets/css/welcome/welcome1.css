@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('https://image.slidesdocs.com/responsive-images/background/poster-teacher-college-classroom-school-training-powerpoint-background_6cca105e78__960_540.jpg');
+    background-size: cover;
+    text-align: center;
+    position: relative; /* Necesario para posicionar el botón de administrador */
+}
+
+/* Contenedor que posiciona el botón en la esquina superior derecha */
+.admin-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Estilos del botón */
+.admin-button {
+    background-color:rgb(59, 59, 59);
+    border-radius: 2em;
+    color: rgb(223, 222, 222);
+    display: flex;
+    align-items: center; /* Alinea el ícono y el texto verticalmente */
+    cursor: pointer;
+    padding: 0.1em 2em;
+    font-size: 18px;
+    width: 30vh;
+}
+
+.admin-button img {
+    width: 24px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: 24px;
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.admin-button span {
+    margin-left: 8px; /* Asegura espacio entre el ícono y el texto */
+}
+
+.admin-button:hover{
+    background-color: #e0e0e0;
+    color: rgb(37, 37, 37);
+}
+
+
+
+
+.container {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Para alinear horizontalmente los botones de Estudiante y Tutor */
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 40px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+/* Estilos para cada botón de grupo */
+.button-group-estudiante,
+.button-group-tutor {
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.button-icon {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 50px; /* Ajusta el tamaño según sea necesario */
+}
+
+button {
+    background-color: #DC7633;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 70px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#estudiante-btn:hover{
+    background-color: #c78824;
+}
+
+#tutor-btn:hover{
+    background-color: #be862c;
+}
